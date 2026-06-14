@@ -41,7 +41,7 @@ Each target record must be of type `pamUser` with the following custom fields (a
 |---|---|
 | `rotation_config` | UID of the Gateway PAM Config |
 | `rotation_resource` | UID of the rotation resource *(General profile only)* |
-| `rotation_cron` | Quartz cron spec for the rotation schedule (e.g. `0 0/10 * * * ?`) |
+| `rotation_cron` | Quartz cron spec for the rotation schedule (e.g. `0 0 0/6 * * ?`) |
 
 Records in the target folders that aren't `pamUser` type or are missing these fields will be silently skipped.
 
