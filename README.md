@@ -28,7 +28,8 @@ A bank of PAM user records in your chosen folders defines what gets rotated and 
 2. Rotates the NHI PAM user
 3. Syncs the new credentials back to the target record
 
-The target records never rotate directly — they just receive the result.
+The target records never rotate directly — they just receive the result.  
+Triggered rotations are added to a job queue, and both the CRON poll and rotation worker are individual threads, that way even if a rotation takes several seconds, other rotations will still be scheduled.
 
 ---
 
