@@ -95,7 +95,7 @@ For best results, run the script as a dedicated user (see step 3), as this will 
 
 ---
 
-## First Run
+## Execution
 
 On first launch the script will prompt for:
 - The UID of your NHI PAM user
